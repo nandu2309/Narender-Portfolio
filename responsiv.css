@@ -1,0 +1,179 @@
+/* ==== Responsive Nav Styling ==== */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  header {
+    height: 10%;
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgb(17, 34, 64);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 20px;
+    transform: translateY(-200%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+  nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  nav a {
+    padding: 10px 20px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+
+/* Responsive home section */
+@media (max-width: 1216px) {
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 5rem 2rem;
+    gap: 2rem;
+    min-height: auto;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+
+  .home-img img {
+    height: 220px;
+    margin-top: 1rem;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .home-content {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .home-content h1,
+  .home-content h2,
+  .home-content p,
+  .typing-text {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .home-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .typing-text {
+    font-size: 1.5rem;
+  }
+
+  .home-content p {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  #modalContent {
+    width: 95%;
+    max-height: 90vh;
+    padding: 1rem;
+  }
+
+  #pdfViewer {
+    height: 60vh;
+  }
+}
+
+
+/* Resopnsive skill section */
+@media (max-width: 1216px) {
+  .skills {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .skills h1 {
+    font-size: 28px;
+    padding: 20px 10px;
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .skills .box {
+    width: 95%;
+    padding: 20px 10px;
+    gap: 15px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill-card {
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 14px;
+    padding: 8px 12px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+  }
+
+  .skill-card img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Responsive project */
+@media (max-width: 768px) {
+  .project h1 {
+    font-size: 28px;
+  }
+
+  .project-card h2 {
+    font-size: 20px;
+  }
+
+  .project-card p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    padding: 40px 10px;
+  }
+
+  .project-grid {
+    gap: 20px;
+  }
+
+  .project-card {
+    padding: 10px;
+  }
+
+  .project-card p {
+    font-size: 15px;
+  }
+}
+

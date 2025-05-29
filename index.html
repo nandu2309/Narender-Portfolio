@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narender Verma</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiv.css">
+    <link rel="icon" href="N.Logo.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+        <header>
+  <a href="#home" class="logo">
+    <img src="N.Logo.png" alt="logo">
+  </a>
+  <div id="burger" class="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="nav">
+    <a href="#home"><span>01.</span>Home</a>
+    <a href="#skills"><span>02.</span>Skills</a>
+    <a href="#project"><span>03.</span>Projects</a>
+    <a href="#contact"><span>04.</span>Contact</a>
+  </nav>
+</header>
+
+    <section class="home" id="home">
+        
+    <div class="home-content">
+        <h2><span>Hello, I am</span></h2>
+        <h1><span>Narender Verma</span></h1>
+        <h3 class="typing-text">I'm a: <span></span></h3>
+        <p>I am an MIS Executive and Google Sheets Automation Specialist, currently pursuing my graduation from Delhi University. I have developed several automations in Google Sheets using Google Apps Script to streamline data processes and reduce manual efforts. My work includes report automation, data validation, email alerts, and workflow optimization. Along with automation, I also have experience in frontend web design, allowing me to build user-friendly and efficient interfaces. With a strong focus on accuracy and problem-solving, I aim to deliver practical solutions that improve productivity. I am open to collaborations and always ready to take on new automation challenges.</p>
+        <button class="animated-button" id="openModalBtn">
+            <svg viewBox="0 0 24 24" class="arr-2"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+            <span class="text">Check Resume</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"/></svg>
+        </button>
+        <!-- Modal -->
+        <div id="resumeModal">
+        <div id="modalContent">
+          <span id="closeModal">&times;</span>
+        <div id="modalHeader">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <h2 style="margin: 0;">Resume</h2>
+              <button id="downloadBtn" title="Download Resume" style="background: none; border: none; cursor: pointer;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#4eff3f" xmlns="http://www.w3.org/2000/  svg"     class="download-icon">
+                <path d="M5 20h14v-2H5v2zm7-18v10.17l3.59-3.58L17 10l-5 5-5-5 1.41-1.41L11 12.17V2h2z"/>
+                </svg>
+              </button>
+            </div>
+        </div>
+          <div id="pdfViewer"></div>
+        </div>
+        </div>
+    </div>
+    <div class="home-img">
+        <img src="Nandu.jpeg" alt="Photo">
+    </div>
+    </section>
+    <section class="skills" id="skills" data-aos="fade-up">
+  <h1><span>02. </span>Skills</h1>
+  <div class="box">
+    <div class="skill-card" data-aos="zoom-in"><img src="Gogole-sheet.png" alt=""><h2>Google Sheet</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="excel.png" alt=""><h2>Advance Excel</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="Form.png" alt=""><h2>Google Form</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="Office.png" alt=""><h2>MS Office</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="html.png" alt=""><h2>HTML</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="css.png" alt=""><h2>CSS</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="javascript.png" alt=""><h2>JavaScript</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="app script.png" alt=""><h2>App Script</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="My sql.png" alt=""><h2>My SQL</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="Power bi.png" alt=""><h2>Power BI</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="Looker-studio.png" alt=""><h2>Looker Studio</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="vs code.png" alt=""><h2>VS Code</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="Github.png" alt=""><h2>Github</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="ChatGPT.png" alt=""><h2>Chat GPT</h2></div>
+    <div class="skill-card" data-aos="zoom-in"><img src="AI.png" alt=""><h2>Artificial Intelligence (AI)</h2></div>
+  </div>
+</section>
+    <section class="project" id="project" data-aos="zoom-in">
+      <h1><span>03. </span>Projects</h1>
+      <div class="project-grid">
+
+    <div class="project-card" data-aos="zoom-in">
+      <img src="Delegation.png" alt="Delegation Sheet">
+      <h2>Automatic Delegation Sheet</h2>
+      <a class="video-btn" data-video="Delegation sheet.mp4">Watch Video</a>
+      <p>Anyone can assign tasks to a doer using this Google Sheet, and the sheet will automatically send an email to the doer with the task name and task ID. The doer can mark the task as completed directly from the email.</p>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+      <img src="sales dashboard.png" alt="Sales Dashboard">
+      <h2>Sales Dashboard</h2>
+      <a class="video-btn" data-video="Dispatch_dashboard.mp4">Watch Video</a>
+      <p>This Sales Dashboard allows you to track your total sales by product on a daily, monthly, and yearly basis. It includes a date range filter for customized views, and you can download the report anytime using the download button.</p>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+      <img src="invoice.png" alt="Invoice Sheet">
+      <h2>Invoice Sheet</h2>
+      <a class="video-btn" data-video="invoice sheet.mp4">Watch Video</a>
+      <p>This is an Invoice Generator developed with Google Sheets and Google Apps Script. By entering basic item details, you can effortlessly create invoices for any company and any product, just like generating a professional laser invoice.</p>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+      <img src="PMS.png" alt="PMS Sheet">
+      <h2>PMS Automatic + Manual Sheet</h2>
+      <a class="video-btn" data-video="PMS sheet.mp4">Watch Video</a>
+      <p>PMS (Production Management System) enables you to manage your production planning on a daily basis according to defined production steps, while maintaining a complete history of all activities.</p>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+      <img src="Expense.png" alt="Expense">
+      <h2>Expense Tracker Dashboard</h2>
+      <a class="video-btn" data-video="Expense_dashboard .mp4">Watch Video</a>
+      <p>Track your company's small expenses and generate a complete expense report. Use the date range filter to customize your view and download reports directly from the dashboard.</p>
+    </div>
+
+    <div class="project-card" data-aos="zoom-in">
+      <img src="full-kitting.png" alt="Full Kitting">
+      <h2>Full Kitting</h2>
+      <a class="video-btn" data-video="Full kitting as per IMS.mp4">Watch Video</a>
+      <p>Quickly find out how many Finished Goods you can produce using your available raw materials with this Google Sheet. Powered by BOMetry, it automatically calculates output based on your stock, making production planning simple and efficient.</p>
+    </div>
+  </div>
+  <div id="video-modal" class="video-modal" data-aos="zoom-in">
+  <div class="video-modal-content">
+    <span class="video-modal-close">&times;</span>
+    <video id="modal-video" controls>
+      <source src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+</section>
+<section class="contact-section" id="contact" data-aos="flip-left">
+  <h1><span>04.</span> Contact</h1>
+  <div class="form-container" data-aos="flip-up">
+    <h2>Get in touch ✳️</h2>
+    <form data-aos="flip-right" action="https://script.google.com/macros/s/AKfycbySTnfTPDZMNBBg4xM6FOTw_lsdgH1sIoOe5XnOW1oAktYJ2BZW-69auIRItyRRMPE8/exec"method="POST"onsubmit="return handleSubmit(event)" id="contactForm">
+      <div class="form-group" data-aos="flip-down">
+        <input type="text" name="name" id="name" required>
+        <label for="name">Name</label>
+      </div>
+      <div class="form-group" data-aos="flip-down">
+        <input type="email" name="email" id="email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="form-group" data-aos="flip-down">
+        <input type="tel" name="phone" id="phone" required>
+        <label for="phone">Phone Number</label>
+      </div>
+      <div class="form-group" data-aos="flip-down">
+        <textarea name="message" id="message" rows="4" required></textarea>
+        <label for="message">Message</label>
+      </div>
+      <button type="submit" class="submit-btn">Submit →</button>
+    </form>
+  </div>
+  <div id="successPopup" class="popup" style="display: none;">
+                <div class="popup-content">
+                    <img src="submit.png" alt="Thank You" />
+                    <h2>Thank you!</h2>
+                    <p>Your submission has been sent.</p>
+                </div>
+            </div>
+        </div>
+</section>
+<footer class="end">
+  <h1>Narender Verma</h1>
+  <p>Copyright © 2025 Narender Verma | All Rights Reserved</p>
+  <a href="https://github.com/nandu2309" target="_blank"><img src="Github.png" alt="Github"></a>
+  <a href="https://www.facebook.com/share/1CLDBrmhPj/?mibextid=wwXIfr" target="_blank"><img src="Facebook.png" alt="Facebook"></a>
+  <a href="https://www.instagram.com/narender__verma?igsh=bnFucjgxZmFlbGw%3D&utm_source=qr" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+  <p>narenderkumar2348@gmail.com</p>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
